@@ -57,7 +57,7 @@ br.clear {
 .wrapper {
 	width: 90%;
 	margin: 0 auto;
-	max-width:1200px;
+	
 }
 .flex-wrapper {
 	display: flex;
@@ -162,9 +162,13 @@ br.clear {
         .lp-p1{
             display: flex;
             justify-content: space-between;
-            gap: 30px;
-            position: relative;
+            gap: 20px;
+            align-items: center;
             .ls{
+                width: fit-content;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
                 .lp-itm1{
                     p{
                         font-size: 34px;
@@ -193,22 +197,20 @@ br.clear {
                 width:auto;
                 display: flex;
                 justify-content:right;
+                position:relative;
                 .itm1{
-                    position: absolute;
-                    top: 0%;
-                    right: 0%;
-                    left: 47%;
-                    width: 48%;
+                     width: fit-content;
+                     height: fit-content;
                     img{
                         width: 100%;
                         display: block;
                     }
                 }
                 .itm2{
-                    width: 6%;
+                    width: 8%;
                     position: absolute;
-                    top:-12%;
-                    left: 69%;
+                    top:-5%;
+                    left: 40%;
                     padding: 30px;
                     background-color: orange;
                     border-radius:42px ;
@@ -220,8 +222,8 @@ br.clear {
                 .itm3{
                     width: 10%;
                     position: absolute;
-                    top: -4;
-                    left:59%;
+                    top:0%;
+                    left: 31%;
                     img{
                         width: 100%;
                         display: block
@@ -237,15 +239,20 @@ br.clear {
             text-align: center;
             .lp-2-itm2{
                 display: flex;
-                gap: 80px;
                 justify-content: space-around;
                 margin: 0 auto;
+                 width: 90%;
+                height: fit-content;
                 align-items: center;
-                width: 10%;
-                img{
-                    width: 100%;
-                    display: block;
-                }
+                 i{
+                    width: fit-content;
+                    height: fit-content;
+                    img{
+                        width: 100%;
+                        display: block;
+                    }
+                 }
+               
             }
         }
     }
@@ -1331,12 +1338,18 @@ br.clear {
                     margin: auto;
                     width: 74%;
                 }
-            }
-            .lp-p2{
-                .lp-2-itm2{
-                    width: 7%;
+                .rs{
+                    .itm2{
+                        width: 10%;
+                        padding: 20px;
+                    }
                 }
             }
+            // .lp-p2{
+            //     .lp-2-itm2{
+            //         width: 7%;
+            //     }
+            // }
         }
     }
     .advertaisment-1{
@@ -1426,25 +1439,15 @@ br.clear {
                     width: 77%;
 
                 }
-                .rs{
-                    .itm1{
-                        top: 10%;
-                        right: 0%;
-                        left: 45%;
-                        width:50%;
-                    }  
-                    .itm2{
-                        width: 7%;
-                    }  
-                }
+               
             }
-            .lp-p2{
-                .lp-2-itm2{
-                    width: 7%;
-                    gap: 40px;
+            // .lp-p2{
+            //     .lp-2-itm2{
+            //         width: 7%;
+            //         gap: 40px;
                     
-                }
-            }
+            //     }
+            // }
         }
     }
     .advertaisment-1{
@@ -1555,30 +1558,44 @@ br.clear {
     .landing-page{
         .landingpage-cont{
             .lp-p1{
-                gap: 0px;
+                flex-direction: column-reverse;
+                    gap: 40px;
                
                 .ls{
-                    
                     margin: auto;
-                    width: 77%;
-
+                    width: 100%;
+                    .lp-itm1{
+                        p{
+                            font-size:27px;
+                            .line-br::before {
+                                content: "\a";
+                                white-space: normal;
+                            }
+                        }
+                    }
+                    .lp-itm2{
+                       p{
+                        font-size: 14px;
+                        .line-br::before {
+                            content: "\a";
+                            white-space: normal;
+                        }
+                       }
+                    }
                 }
                 .rs{
-                    .itm1{
-                        top: 10%;
-                        right: 0%;
-                        left: 45%;
-                        width:50%;
-                    }  
-                    .itm2{
-                        width: 8%;
-                    }  
+                .itm2{
+                    width: 9%;
+                    padding: 27px;
                 }
+                }
+                
+               
             }
             .lp-p2{
                 .lp-2-itm2{
-                    width: 7%;
-                    gap: 40px;
+                    
+                    gap: 20px;
                     
                 }
             }
@@ -1756,7 +1773,6 @@ br.clear {
                
                 .ls{
                     margin: auto;
-                    width: 95%;
                     .lp-itm1{
                         p{
                             font-size: 30px;
@@ -1769,29 +1785,19 @@ br.clear {
                     }
                 }
                 .rs{
-                    .itm1{
-                        top: 28%;
-                        right: 0%;
-                        left: 45%;
-                        width:50%;
-                    }  
                     .itm2{
-                        width: 8%;
-                        top: 11%;
-                        padding: 24px;
-                    } 
-                    .itm3{
-                        top: 64px;
-                    } 
+                        padding: 25px;
+                    }
                 }
+                
             }
-            .lp-p2{
-                .lp-2-itm2{
-                    width: 7%;
-                    gap: 40px;
+            // .lp-p2{
+            //     .lp-2-itm2{
+            //         width: 7%;
+            //         gap: 40px;
                     
-                }
-            }
+            //     }
+            // }
         }
     }
     .advertaisment-1{
@@ -2106,7 +2112,8 @@ br.clear {
     .landing-page{
         .landingpage-cont{
             .lp-p1{
-                gap: 0px;
+                flex-direction: column-reverse;
+                    gap: 40px;
                
                 .ls{
                     margin: auto;
@@ -2114,40 +2121,37 @@ br.clear {
                     .lp-itm1{
                         p{
                             font-size:27px;
+                            .line-br::before {
+                                content: "\a";
+                                white-space: normal;
+                            }
                         }
                     }
                     .lp-itm2{
                        p{
                         font-size: 14px;
+                        .line-br::before {
+                            content: "\a";
+                            white-space: normal;
+                        }
                        }
                     }
                 }
                 .rs{
-                    .itm1{
-                        top: 36%;
-                        right: 0%;
-                        left: 50%;
-                        width:50%;
-                    }  
                     .itm2{
-                        width: 8%;
-                        top: 20%;
-                        left:73% ;
-                        padding: 19px;
-                    } 
-                    .itm3{
-                        top:83px;
-                        left:63%;
-                    } 
+                        padding: 20px;
+                    }
                 }
+                
+               
             }
-            .lp-p2{
-                .lp-2-itm2{
-                    width: 7%;
-                    gap: 40px;
+            // .lp-p2{
+            //     .lp-2-itm2{
+            //         width: 7%;
+            //         gap: 40px;
                     
-                }
-            }
+            //     }
+            // }
         }
     }
     .advertaisment-1{
@@ -2598,7 +2602,7 @@ br.clear {
     }
 
 }
-@media all and (max-width:480px){
+@media all and (max-width:540px){
     *{
         p{
             font-size: 13px;
@@ -2643,28 +2647,16 @@ br.clear {
                     }
                 }
                 .rs{
-                    .itm1{
-                        top: 2%;
-                        right: 0%;
-                        left: 43%;
-                        width:60%;
-                    }  
                     .itm2{
-                        width: 8%;
-                        top:-5%;
-                        left:70% ;
                         padding: 15px;
-                    } 
-                    .itm3{
-                        top:4px;
-                        left:60%;
-                    } 
+                    }
+                  
                 }
+                
             }
             .lp-p2{
                 .lp-2-itm2{
-                    width: 7%;
-                    gap: 30px;
+                    gap: 20px;
                     
                 }
             }
@@ -2896,6 +2888,7 @@ br.clear {
         }
     }
     .grid-section{
+
         .section-content{
             padding: 20px;
             .part1{
@@ -2943,7 +2936,7 @@ br.clear {
 
                 width: 90%;
                 .grid-content-1,.grid-content-2,.grid-content-3,.grid-content-4,.grid-content-5,.grid-content-6{
-                    padding:30px ;
+                    padding:20px ;
                     .grid-head{
                         font-size: 17px;
                     }
@@ -3089,7 +3082,7 @@ br.clear {
     }
 
 }
-@media all and (max-width:360px){
+@media all and (max-width:380px){
     *{
         p{
             font-size: 12px;
@@ -3140,30 +3133,20 @@ br.clear {
                     }
                 }
                 .rs{
-                    display: none;
-                    .itm1{
-                        top: 2%;
-                        right: 0%;
-                        left: 43%;
-                        width:60%;
-                    }  
                     .itm2{
-                        width: 8%;
-                        top:-5%;
-                        left:70% ;
-                        padding: 15px;
-                    } 
-                    .itm3{
-                        top:4px;
-                        left:60%;
-                    } 
+                        padding: 10px;
+                    }
+                  
                 }
+               
             }
             .lp-p2{
                 display: none;
                 .lp-2-itm2{
-                    width: 7%;
-                    gap: 30px;
+                   i{
+                    width: 10px;
+                   }
+                    gap: 10px;
                     
                 }
             }
@@ -3644,31 +3627,13 @@ br.clear {
                        }
                     }
                 }
-                .rs{
-                    display: none;
-                    .itm1{
-                        top: 2%;
-                        right: 0%;
-                        left: 43%;
-                        width:60%;
-                    }  
-                    .itm2{
-                        width: 8%;
-                        top:-5%;
-                        left:70% ;
-                        padding: 15px;
-                    } 
-                    .itm3{
-                        top:4px;
-                        left:60%;
-                    } 
-                }
+                
             }
             .lp-p2{
                 display: none;
                 .lp-2-itm2{
-                    width: 7%;
-                    gap: 30px;
+                    gap: 8px;
+                    width: 100%;
                     
                 }
             }
